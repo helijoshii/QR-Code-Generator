@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black">
+    <div class="m-0 p-0 font-serif box-border">
+      <div
+        id="container"
+        class="w-[400px] py-6 px-9 absolute top-1/2 left-1/2 bg-white rounded-lg transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <p class="font-semibold text-sm mb-2">Enter your text or URL</p>
+        <input
+          id="qrText"
+          class="w-full h-12 border-solid border-black outline-0 p-2 mt-2 mx-0 mb-5 rounded-md"
+          type="text"
+          placeholder="Text or URL"
+        />
+
+        <div id="imgBox" class="w-[200px] rounded max-h-0 overflow-hidden">
+          <img src="" class="w-full p-2" id="qrImage" />
+        </div>
+        <button
+          onclick="generateQR()"
+          class="w-full h-[50px] bg-[#494eea] text-white border-0 outline-0 rounded-md cursor-pointer my-5 mx-0 font-medium shadow-md"
+        >
+          Generate QR Code
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
